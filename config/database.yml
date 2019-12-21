@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: generative_art
+
+production:
+  <<: *default
+  database: generative_art
+
+test:
+  <<: *default
+  database: generative_art_test
